@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      VITE_BASE_URL: /planix-app/
 
     steps:
       # 1️⃣ Récupérer le code

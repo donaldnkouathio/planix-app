@@ -12,15 +12,14 @@ function App() {
           <div className="hero-content flex-col lg:flex-row-reverse">
               <img
                   src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-                  className="max-w-sm rounded-lg shadow-2xl"
+                  className="max-w-sm rounded-lg shadow-2xl hidden lg:block"
               />
               <div className="w-1/2">
-                  <h1 className="text-5xl font-bold">Box Office News!</h1>
+                  <h1 className="text-5xl font-bold">Organisez votre vie avec simplicité !</h1>
                   <p className="py-6">
-                      Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                      quasi. In deleniti eaque aut repudiandae et a id nisi.
+                      Planix vous aide à planifier, suivre et visualiser vos événements récurrents et non récurrents, où que vous soyez.
                   </p>
-                  <button className="btn btn-primary" onClick={toggleTheme}>Get Started</button>
+                  <button className="btn btn-primary" onClick={toggleTheme}>Télécharger sur Play Store</button>
               </div>
           </div>
       </div>

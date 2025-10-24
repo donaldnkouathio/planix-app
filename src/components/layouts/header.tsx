@@ -24,8 +24,8 @@ export default function Header() {
 
         <div className="flex-none hidden lg:block">
           <nav className="flex flex-row gap-4">
-            <a href="#home" className="link">Accueil</a>
-            <a href="#features" className="link">Fonctionnalités</a>
+            <a href="/#home" className="link">Accueil</a>
+            <a href="/#features" className="link">Fonctionnalités</a>
           </nav>
         </div>
 

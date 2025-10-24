@@ -1,17 +1,13 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import App from "./app/App";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import "./index.css";
-import "./i18n";
+import Layout from "/src/layout";
 
-// Type assertion pour s'assurer que l'élément existe
-const container = document.getElementById("root");
-if (!container) throw new Error("Root element not found");
-
-const root = createRoot(container);
-
-root.render(
-    <StrictMode>
-        <App />
-    </StrictMode>
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <Layout />
+    </BrowserRouter>
+  </React.StrictMode>
 );

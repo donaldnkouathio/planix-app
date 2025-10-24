@@ -1,20 +1,67 @@
 @import "tailwindcss";
+
+@import 'material-symbols/index.css';
+
+@import "@fontsource/dm-sans/400.css";
+@import "@fontsource/dm-sans/700.css";
+@import "@fontsource/montserrat/400.css";
+@import "@fontsource/montserrat/700.css";
+
 @custom-variant dark (&:where(.dark, .dark *));
-@plugin "daisyui" {
-  themes: light --default, dark;
-  root: ":root"; /* applique les variables CSS globalement */
-  logs: true;    /* pour voir les logs DaisyUI si besoin */
-}
 
 @theme {
-  --color-*: initial;
   --color-primary: rgba(24,119,242,1);
+
+  --font-link: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Montserrat", sans-serif;
 }
 
 :root {
+  font-family: var(--font-body), sans-serif;
+}
 
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  @apply bg-gradient-to-br from-white via-primary/15 to-primary/10
+    dark:from-black dark:via-black/90 dark:to-black/80
+  text-gray-600 dark:text-gray-50;
+}
+
+.margin-top{
+  @apply pt-15 pb-15 lg:pt-20 lg:pb-20 scroll-mt-[50px];
+}
+
+.hero-bg{
+  background: linear-gradient(75deg,
+  color-mix(in srgb, var(--color-primary), transparent 95%) 50%,
+  color-mix(in srgb, var(--color-primary), transparent 98%) 25%, transparent 50%
+  );
 }
 
 .block-container{
   @apply md:max-w-[768px] lg:max-w-[976px] xl:max-w-[1200px] 2xl:max-w-[1200px] mx-auto px-4;
+}
+
+/* animation up-down simple */
+.up-down {
+  animation: upDown 1.8s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes upDown {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-12px); } /* monte */
+  100% { transform: translateY(0); }     /* revient */
+}
+
+.link{
+  font-family: var(--font-link), sans-serif;
+  @apply text-primary dark:text-gray-50 font-semibold cursor-pointer;
+}
+
+.button{
+  @apply text-white bg-primary dark:text-primary dark:bg-white p-2 rounded-lg cursor-pointer;
 }

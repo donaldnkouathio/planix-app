@@ -57,7 +57,7 @@ export default function FAQPage() {
                     <div key={qIndex} className="border-t border-gray-100 dark:border-gray-700">
                       <button
                         onClick={() => toggleQuestion(catIndex, qIndex)}
-                        className="flex cursor-pointer justify-between w-full p-4 text-left bg-gray-50 hover:bg-gray-100 dark:hover:bg-primary/25"
+                        className="flex cursor-pointer justify-between w-full p-4 text-left bg-gray-50 dark:bg-primary/20 hover:bg-gray-100 dark:hover:bg-primary/25"
                       >
                         <span className="font-medium">{item.question}</span>
                         {activeQuestion[catIndex] === qIndex ? (

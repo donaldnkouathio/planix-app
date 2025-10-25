@@ -17,8 +17,8 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleLanguage = () => {
-    i18n.changeLanguage(i18n.language === "fr" ? "en" : "fr");
+  const handleLanguage = async () => {
+    await i18n.changeLanguage(i18n.language === "fr" ? "en" : "fr");
     setMenuOpen(false);
   };
 

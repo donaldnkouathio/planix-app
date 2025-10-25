@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Event Management",
+    "faq": [
+      {
+        "question": "What is the difference between a recurring and a non-recurring event ?",
+        "answer": "A recurring event automatically repeats at a defined interval (e.g., every week, every month).\nA non-recurring event has a start date and an end date and must be created manually for each occurrence."
+      },
+      {
+        "question": "How do I create a recurring event ?",
+        "answer": "From the event creation page, enable the 'Recurring' option, then choose the frequency (week, month, year, or custom)."
+      },
+      {
+        "question": "How do I edit or delete a single occurrence of an event ?",
+        "answer": "Long press on the specific event line (the sub-entry with its dates) and modify it directly — this will not affect other occurrences."
+      }
+    ]
+  },
+  {
+    "title": "Backup and Restore",
+    "faq": [
+      {
+        "question": "Where is my data stored ?",
+        "answer": "Planix automatically stores your data locally on your device in the Download → Planix → Backup folder.\nYou can also enable Google Drive backup to retrieve it on another phone."
+      },
+      {
+        "question": "How do I back up my data to Google Drive ?",
+        "answer": "Go to Settings → Data → Backup and Restore, then confirm the backup by clicking the 'Backup' button."
+      },
+      {
+        "question": "How do I restore a backup ?",
+        "answer": "From Settings → Data → Backup and Restore, click the 'Restore' button. You will then have the option to restore from a local backup or Google Drive if available."
+      }
+    ]
+  },
+  {
+    "title": "Appearance and Customization",
+    "faq": [
+      {
+        "question": "How do I change the app theme ?",
+        "answer": "Go to Settings → General → Theme, and choose between light and dark themes."
+      },
+      {
+        "question": "How do I change the app language ?",
+        "answer": "Go to Settings → General → Language, then select French or English."
+      }
+    ]
+  },
+  {
+    "title": "Account and Google Sign-In",
+    "faq": [
+      {
+        "question": "Why do I need to sign in with Google ?",
+        "answer": "Google Sign-In is used only to access your Drive space and store backups.\nNo other personal data is collected."
+      },
+      {
+        "question": "Can I use Planix without signing in ?",
+        "answer": "Yes. You can use it fully in local mode.\nGoogle Sign-In is optional but recommended for automatic backups."
+      }
+    ]
+  },
+  {
+    "title": "History and Graphs",
+    "faq": [
+      {
+        "question": "How do I view the history of my events ?",
+        "answer": "Open the details of an event from the main menu.\nYou will see the full list of your past and upcoming events."
+      },
+      {
+        "question": "How do I view the event graph ?",
+        "answer": "Open the details of an event from the main menu.\nIf your event already has at least 2 completed event lines, you will see the 'View on Graph' button appear next to the history."
+      },
+      {
+        "question": "How do I read the event graph ?",
+        "answer": "The graph shows the duration of your events over time.\nEach point represents an event line."
+      }
+    ]
+  },
+  {
+    "title": "Other Questions",
+    "faq": [
+      {
+        "question": "What is in the trash ?",
+        "answer": "The trash keeps deleted events for 30 days before permanent deletion.\nYou can restore them from Settings → Data → Trash."
+      },
+      {
+        "question": "How do I contact Planix support ?",
+        "answer": "Go to About → Help → Contact Support."
+      }
+    ]
+  }
+]

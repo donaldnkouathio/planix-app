@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Gestion des événements",
+    "faq": [
+      {
+        "question": "Quelle est la différence entre un événement récurrent et non récurrent ?",
+        "answer": "Un événement récurrent se répète automatiquement à un intervalle défini (ex : chaque semaine, chaque mois).\nUn événement non récurrent a une date de début et une date de fin et doit être créé manuellement pour chaque occurrence."
+      },
+      {
+        "question": "Comment créer un événement récurrent ?",
+        "answer": "Depuis la page d’ajout d’événement, activez l’option « Récurrent », puis choisissez la granularité (semaine, mois, année ou personnalisée)."
+      },
+      {
+        "question": "Comment modifier ou supprimer une seule occurrence d’un événement ?",
+        "answer": "Faites une longue pression sur la ligne d’événement concernée (la sous-entrée avec ses dates) puis modifiez-la directement — cela n’affectera pas les autres occurrences."
+      }
+    ]
+  },
+  {
+    "title": "Sauvegarde et restauration",
+    "faq": [
+      {
+        "question": "Où mes données sont-elles enregistrées ?",
+        "answer": "Planix enregistre automatiquement vos données en local sur votre appareil dans le répertoire Téléchargement → Planix → Backup.\nVous pouvez aussi activer la sauvegarde sur Google Drive pour les récupérer sur un autre téléphone."
+      },
+      {
+        "question": "Comment sauvegarder mes données sur Google Drive ?",
+        "answer": "Allez dans Paramètres → Données → Sauvegarde et restauration, puis confirmez la sauvegarde en cliquant sur le bouton « Sauvegarder »."
+      },
+      {
+        "question": "Comment restaurer une sauvegarde ?",
+        "answer": "Depuis Paramètres → Données → Sauvegarde et restauration, cliquez sur le bouton « Restaurer ».\nVous aurez alors le choix entre une restauration à partir d'une sauvegarde locale ou depuis Google Drive, le cas échéant."
+      }
+    ]
+  },
+  {
+    "title": "Apparence et personnalisation",
+    "faq": [
+      {
+        "question": "Comment changer le thème de l’application ?",
+        "answer": "Dans Paramètres → Général → Thème, choisissez entre le thème clair et le thème sombre."
+      },
+      {
+        "question": "Comment changer la langue de l’application ?",
+        "answer": "Allez dans Paramètres → Général → Langue, puis sélectionnez Français ou Anglais."
+      }
+    ]
+  },
+  {
+    "title": "Compte et connexion Google",
+    "faq": [
+      {
+        "question": "Pourquoi dois-je me connecter à Google ?",
+        "answer": "La connexion Google est utilisée uniquement pour accéder à votre espace Drive et stocker les sauvegardes.\nAucune autre donnée personnelle n’est collectée."
+      },
+      {
+        "question": "Puis-je utiliser Planix sans me connecter ?",
+        "answer": "Oui. Vous pouvez l’utiliser entièrement en mode local.\nLa connexion Google est optionnelle mais recommandée pour la sauvegarde automatique."
+      }
+    ]
+  },
+  {
+    "title": "Historique et graphiques",
+    "faq": [
+      {
+        "question": "Comment afficher l’historique de mes événements ?",
+        "answer": "Ouvrez les détails d'un événement depuis le menu principal.\nVous verrez la liste complète de vos événements passés et futurs."
+      },
+      {
+        "question": "Comment afficher le graphique d'événements ?",
+        "answer": "Ouvrez les détails d'un événement depuis le menu principal.\nSi votre événement possède déjà au moins deux lignes d'événements terminées, vous verrez le bouton « Voir sur le graphe » apparaître à côté de l'historique."
+      },
+      {
+        "question": "Comment lire le graphique des événements ?",
+        "answer": "Le graphique montre la durée de vos événements dans le temps.\nChaque point représente une ligne d’événement."
+      }
+    ]
+  },
+  {
+    "title": "Autres questions",
+    "faq": [
+      {
+        "question": "Que contient la corbeille ?",
+        "answer": "La corbeille conserve les événements supprimés pendant 30 jours avant leur suppression définitive.\nVous pouvez les restaurer depuis Paramètres → Données → Corbeille."
+      },
+      {
+        "question": "Comment contacter le support Planix ?",
+        "answer": "Depuis À propos → Aide → Contacter le support."
+      }
+    ]
+  }
+]

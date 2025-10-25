@@ -3,6 +3,7 @@ import Home from "/src/app/Home";
 import Header from "/src/components/layouts/header";
 import Footer from "/src/components/layouts/footer";
 import Policy from "/src/app/policy";
+import ScrollToTopButton from "/src/components/ui/scroll-top-button";
 
 function Layout() {
   return (
@@ -11,8 +12,10 @@ function Layout() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/policy" element={<Policy />} />
+        <Route path="/privacy-policy" element={<Policy />} />
       </Routes>
+
+      <ScrollToTopButton/>
 
       <Footer/>
     </>

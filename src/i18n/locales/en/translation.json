@@ -1,3 +1,22 @@
 {
-  "hello": "Hello world"
+  "home": "Home",
+  "features": "Features",
+  "faq": "FAQ",
+  "Organisez votre vie avec simplicité !": "Organize your life with simplicity!",
+  "Planix vous aide à planifier": "Planix helps you plan, track, and visualize your recurring and non-recurring events, wherever you are.",
+  "Télécharger sur Play Store": "Download on Play Store",
+  "Événements récurrents & non récurrents": "Recurring & Non-Recurring Events",
+  "Gère tes tâches quotidiennes, réunions, projets ou routines hebdomadaires.": "Manage your daily tasks, meetings, projects, or weekly routines.",
+  "Historique et graphiques": "History and Charts",
+  "Visualise l’évolution de tes activités dans le temps grâce à des graphiques clairs et interactifs.": "View the evolution of your activities over time with clear and interactive charts.",
+  "Sauvegarde et restauration": "Backup and Restore",
+  "Sauvegarde de vos données localement ou sur Google Drive.": "Save your data locally or on Google Drive.",
+  "Thèmes et personnalisation": "Themes and Customization",
+  "Choisissez entre un thème clair et sombre selon vos préférences.": "Choose between light and dark themes according to your preference.",
+  "Foire aux Questions": "Frequently Asked Questions",
+  "Retrouvez ici toutes les réponses aux questions fréquentes sur Planix.": "Find here all the answers to the most common questions about Planix.",
+  "Dernière mise à jour le ": "Last updated on ",
+  "Politique de confidentialité": "Privacy Policy",
+  "Merci d’utiliser Planix.": "Thank you for using Planix.",
+  "Cette politique de confidentialité décrit": "This privacy policy describes how we collect, use, and protect your information when you use our mobile application Planix (hereinafter referred to as “the Application”)."
 }

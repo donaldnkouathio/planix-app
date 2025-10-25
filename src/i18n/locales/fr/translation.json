@@ -1,3 +1,22 @@
 {
-  "hello": "Bonjour le monde"
+  "home": "Accueil",
+  "features": "Fonctionnalités",
+  "faq": "FAQ",
+  "Organisez votre vie avec simplicité !": "Organisez votre vie avec simplicité !",
+  "Planix vous aide à planifier": "Planix vous aide à planifier, suivre et visualiser vos événements récurrents et non récurrents, où que vous soyez.",
+  "Télécharger sur Play Store": "Télécharger sur Play Store",
+  "Événements récurrents & non récurrents": "Événements récurrents & non récurrents",
+  "Gère tes tâches quotidiennes, réunions, projets ou routines hebdomadaires.": "Gère tes tâches quotidiennes, réunions, projets ou routines hebdomadaires.",
+  "Historique et graphiques": "Historique et graphiques",
+  "Visualise l’évolution de tes activités dans le temps grâce à des graphiques clairs et interactifs.": "Visualise l’évolution de tes activités dans le temps grâce à des graphiques clairs et interactifs.",
+  "Sauvegarde et restauration": "Sauvegarde et restauration",
+  "Sauvegarde de vos données localement ou sur Google Drive.": "Sauvegarde de vos données localement ou sur Google Drive.",
+  "Thèmes et personnalisation": "Thèmes et personnalisation",
+  "Choisissez entre un thème clair et sombre selon vos préférences.": "Choisissez entre un thème clair et sombre selon vos préférences.",
+  "Foire aux Questions": "Foire aux Questions",
+  "Retrouvez ici toutes les réponses aux questions fréquentes sur Planix.": "Retrouvez ici toutes les réponses aux questions fréquentes sur Planix.",
+  "Dernière mise à jour le ": "Dernière mise à jour le ",
+  "Politique de confidentialité": "Politique de confidentialité",
+  "Merci d’utiliser Planix.": "Merci d’utiliser Planix.",
+  "Cette politique de confidentialité décrit": "Cette politique de confidentialité décrit la manière dont nous collectons, utilisons et protégeons vos informations lorsque vous utilisez notre application mobile Planix (ci-après “l’Application”)."
 }

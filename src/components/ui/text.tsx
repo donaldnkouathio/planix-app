@@ -19,7 +19,7 @@ export default function Text({ label, type }: ITextProps) {
 
   else if(type === "h2") {
     return (
-      <h1 className="text-3xl lg:text-5xl font-semibold text-primary dark:text-gray-50 mb-4">
+      <h1 className="text-xl lg:text-2xl font-semibold text-primary dark:text-gray-50">
         {label}
       </h1>
     );

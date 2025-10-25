@@ -1,12 +1,9 @@
-import Header from "/src/components/layouts/header";
-import Hero from "/src/components/layouts/hero";
-import Features from '../components/layouts/features';
-import Footer from "/src/components/layouts/footer";
+import PrivacyPolicy from "/src/components/layouts/policy";
 
 function Policy() {
   return (
       <div className="min-h-screen">
-        policy
+        <PrivacyPolicy/>
       </div>
   )
 }

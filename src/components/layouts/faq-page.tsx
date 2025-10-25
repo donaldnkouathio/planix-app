@@ -35,12 +35,12 @@ export default function FAQPage() {
           {faqData.map((category, catIndex) => (
             <div
               key={catIndex}
-              className="rounded-lg shadow-sm overflow-hidden"
+              className="overflow-hidden"
             >
               {/* Header catégorie */}
               <div
                 onClick={() => toggleCategory(catIndex)}
-                className="w-full cursor-pointer flex justify-between items-center p-5 text-left font-semibold text-lg bg-white dark:bg-primary/30 text-gray-800 hover:bg-gray-100 dark:text-white dark:hover:bg-primary/35 transition"
+                className="w-full shadow-sm  cursor-pointer flex justify-between items-center p-5 text-left font-semibold text-lg bg-white dark:bg-primary/30 text-gray-800 hover:bg-gray-100 dark:text-white dark:hover:bg-primary/35 transition"
               >
                 <Text label={category.title} type="h3"/>
                 {activeCategory === catIndex ? (
@@ -52,12 +52,12 @@ export default function FAQPage() {
 
               {/* Contenu catégorie */}
               {activeCategory === catIndex && (
-                <div className="text-gray-700 dark:text-white dark:bg-primary/20 transition">
+                <div className="text-gray-700 bg-gray-50 dark:text-white dark:bg-primary/20 transition">
                   {category.faq.map((item, qIndex) => (
                     <div key={qIndex} className="border-t border-gray-100 dark:border-gray-700">
                       <button
                         onClick={() => toggleQuestion(catIndex, qIndex)}
-                        className="flex cursor-pointer justify-between w-full p-4 text-left hover:bg-gray-50 dark:hover:bg-primary/25"
+                        className="flex cursor-pointer justify-between w-full p-4 text-left bg-gray-50 hover:bg-gray-100 dark:hover:bg-primary/25"
                       >
                         <span className="font-medium">{item.question}</span>
                         {activeQuestion[catIndex] === qIndex ? (

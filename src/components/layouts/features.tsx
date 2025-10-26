@@ -44,11 +44,19 @@ export default function Features() {
       <div className="block-container flex flex-col lg:flex-row justify-between items-center">
 
         <div className="flex-1/3 px-4 hidden lg:flex">
-          <img
-            src={theme === "light" ? chart_light_right : chart_dark_right}
-            alt="Planix Mockup"
-            className="relative up-down z-10 transition-opacity duration-500"
-          />
+          {theme === "dark" ?
+            <img
+              src={chart_dark_right}
+              alt="Planix Mockup"
+              className="relative up-down z-10 transition-opacity duration-500"
+            />
+            :
+            <img
+              src={chart_light_right}
+              alt="Planix Mockup"
+              className="relative up-down z-10 transition-opacity duration-500"
+            />
+          }
         </div>
 
         <div className="flex-2/3">

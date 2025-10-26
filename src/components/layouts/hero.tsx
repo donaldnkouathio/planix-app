@@ -13,12 +13,21 @@ export default function Hero(){
 
         <div className="w-full lg:w-1/2 flex flex-col items-center">
           <div className="relative flex items-center justify-center">
-            <img
-              key={theme}
-              src={theme === "light" ? home_light_right : home_dark_right}
-              alt="Planix Mockup"
-              className="up-down relative z-10 transition-opacity duration-500"
-            />
+            {theme === "dark" ?
+              <img
+                key={theme}
+                src={home_dark_right}
+                alt="Planix Mockup"
+                className="up-down relative z-10 transition-opacity duration-500"
+              />
+              :
+              <img
+                key={theme}
+                src={home_light_right}
+                alt="Planix Mockup"
+                className="up-down relative z-10 transition-opacity duration-500"
+              />
+            }
           </div>
         </div>
 

@@ -3,7 +3,6 @@ import chart_dark_right from '../../assets/app/dark/chart_left.png';
 import chart_light_right from '../../assets/app/light/chart_left.png';
 import Card from "/src/components/ui/card";
 import {useTranslation} from "react-i18next";
-import {useTheme} from "/src/theme/themeContext";
 import MotionCard from "/src/components/ui/motion-card";
 
 interface IFeature{
@@ -14,7 +13,6 @@ interface IFeature{
 
 export default function Features() {
   const { t } = useTranslation();
-  const { theme } = useTheme();
 
   const featuresData : IFeature[] = [
     {
@@ -44,19 +42,16 @@ export default function Features() {
       <div className="block-container flex flex-col lg:flex-row justify-between items-center">
 
         <div className="flex-1/3 px-4 hidden lg:flex">
-          {theme === "dark" ?
-            <img
-              src={chart_dark_right}
-              alt="Planix Mockup"
-              className="relative up-down z-10 transition-opacity duration-500"
-            />
-            :
-            <img
-              src={chart_light_right}
-              alt="Planix Mockup"
-              className="relative up-down z-10 transition-opacity duration-500"
-            />
-          }
+          <img
+            src={chart_dark_right}
+            alt="Planix Mockup"
+            className="relative up-down hidden dark:block z-10 transition-opacity duration-500"
+          />
+          <img
+            src={chart_light_right}
+            alt="Planix Mockup"
+            className="relative block dark:hidden up-down z-10 transition-opacity duration-500"
+          />
         </div>
 
         <div className="flex-2/3">

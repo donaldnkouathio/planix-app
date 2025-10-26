@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import logo from "/src/assets/logo.png";
 import MaterialIcon from "/src/components/ui/material-icon";
 import { useTranslation } from "react-i18next";
-import useTheme from "/src/hooks/useTheme";
+import {useTheme} from "/src/theme/themeContext";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
@@ -40,7 +40,7 @@ export default function Header() {
         {/* LOGO */}
         <div className="text-xl font-semibold flex flex-row items-center gap-2">
           <img src={logo} alt="Planix logo" className="h-[20px]" />
-          <div className="link">Planix</div>
+          <a href="/" className="link">Planix</a>
         </div>
 
         {/* DESKTOP NAV */}

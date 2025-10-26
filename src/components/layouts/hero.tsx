@@ -1,8 +1,11 @@
 import {useTranslation} from "react-i18next";
-import mockup_dark from '../../assets/app/mockup_dark.png';
+import home_dark_right from '../../assets/app/dark/home_right.png';
+import home_light_right from '../../assets/app/light/home_right.png';
+import {useTheme} from "/src/theme/themeContext";
 
 export default function Hero(){
   const { t } = useTranslation();
+  const { theme } = useTheme();
 
   return (
     <div id="home" className="bg-white dark:bg-black hero-bg">
@@ -11,9 +14,10 @@ export default function Hero(){
         <div className="w-full lg:w-1/2 flex flex-col items-center">
           <div className="relative flex items-center justify-center">
             <img
-              src={mockup_dark}
+              key={theme}
+              src={theme === "light" ? home_light_right : home_dark_right}
               alt="Planix Mockup"
-              className="up-down relative z-10"
+              className="up-down relative z-10 transition-opacity duration-500"
             />
           </div>
         </div>

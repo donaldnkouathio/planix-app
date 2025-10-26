@@ -27,7 +27,7 @@ export default function ScrollToTopButton() {
   return (
     <div
       onClick={scrollToTop}
-      className={`
+      className={` flex justify-center items-center  h-10 w-10
         fixed bottom-14 lg:bottom-6 right-6 z-50 
         bg-primary dark:bg-white 
         rounded-lg shadow-lg transition-all duration-300 
@@ -36,7 +36,7 @@ export default function ScrollToTopButton() {
       `}
       aria-label="Scroll to top"
     >
-      <MaterialIcon name="arrow_drop_up" className="mt-1 mx-1 text-white dark:text-primary"/>
+      <MaterialIcon name="arrow_drop_up" className="mx-1 text-white dark:text-primary"/>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import {motion, useScroll, useTransform} from 'motion/react';
+import {motion} from 'motion/react';
 
 export default function MotionCard({ className, style, children, id, direction='down' }:{className?: string, style?:any, id?:string, direction?:"left" | "right" | "up" | "down", children:any}) {
 // état initial

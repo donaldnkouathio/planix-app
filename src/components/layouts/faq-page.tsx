@@ -5,6 +5,7 @@ import faqData_en from "/src/datas/faq_en.json";
 import MaterialIcon from "/src/components/ui/material-icon";
 import Text from "/src/components/ui/text";
 import {useTranslation} from "react-i18next";
+import MotionCard from "/src/components/ui/motion-card";
 
 export default function FAQPage() {
   const { t, i18n } = useTranslation();
@@ -28,12 +29,14 @@ export default function FAQPage() {
   return (
     <div id="faq" className="margin-top">
       <div className="block-container">
-        <Text type="h1" label={t("Foire aux Questions")}/>
-        <Text label={t("Retrouvez ici toutes les réponses aux questions fréquentes sur Planix.")}/>
+        <MotionCard>
+          <Text type="h1" label={t("Foire aux Questions")}/>
+          <Text label={t("Retrouvez ici toutes les réponses aux questions fréquentes sur Planix.")}/>
+        </MotionCard>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           {faqData.map((category, catIndex) => (
-            <div
+            <MotionCard
               key={catIndex}
               className="overflow-hidden"
             >
@@ -76,7 +79,7 @@ export default function FAQPage() {
                   ))}
                 </div>
               )}
-            </div>
+            </MotionCard>
           ))}
         </div>
       </div>

@@ -30,7 +30,7 @@ export default function Hero(){
           <p className="py-6">
             {t("Planix vous aide à planifier")}
           </p>
-          <button className="button" >{t("Télécharger sur Play Store")}</button>
+          <a href='https://play.google.com/store/apps/details?id=cm.planix' className="button" >{t("Télécharger sur Play Store")}</a>
         </div>
       </div>
     </div>

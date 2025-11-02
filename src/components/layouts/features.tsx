@@ -45,12 +45,12 @@ export default function Features() {
           <img
             src={chart_dark_right}
             alt="Planix Mockup"
-            className="relative up-down hidden dark:block z-10 transition-opacity duration-500"
+            className="hidden dark:block up-down scale-img"
           />
           <img
             src={chart_light_right}
             alt="Planix Mockup"
-            className="relative block dark:hidden up-down z-10 transition-opacity duration-500"
+            className="block dark:hidden up-down scale-img"
           />
         </div>
 

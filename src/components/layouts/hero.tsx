@@ -14,12 +14,12 @@ export default function Hero(){
             <img
               src={home_dark_right}
               alt="Planix Mockup"
-              className="up-down hidden dark:block relative z-10 transition-opacity duration-500"
+              className="hidden dark:block up-down scale-img"
             />
             <img
               src={home_light_right}
               alt="Planix Mockup"
-              className="up-down block dark:hidden relative z-10 transition-opacity duration-500 "
+              className="block dark:hidden up-down scale-img"
             />
           </div>
         </div>

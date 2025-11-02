@@ -46,6 +46,10 @@ img {
 }
 
 .block-container{
+  @apply md:max-w-[768px] lg:max-w-[976px] xl:max-w-[1200px] 2xl:max-w-[1200px] mx-auto px-4 lg:px-0;
+}
+
+.block-container-px{
   @apply md:max-w-[768px] lg:max-w-[976px] xl:max-w-[1200px] 2xl:max-w-[1200px] mx-auto px-4;
 }
 
@@ -68,4 +72,31 @@ img {
 
 .button{
   @apply text-white bg-primary dark:text-primary dark:bg-white p-2 rounded-lg cursor-pointer;
+}
+
+.scale-img{
+  @apply relative z-10 transition-all duration-300 hover:scale-105;
+}
+
+/* Animation d'underline fluide */
+.link-underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 2px;
+  width: 0;
+  background-color: currentColor;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%);
+}
+
+.link-underline:hover::after {
+  width: 100%;
 }

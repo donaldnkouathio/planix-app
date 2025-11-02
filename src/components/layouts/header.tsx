@@ -32,11 +32,11 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full mt-1 mx-1 rounded-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-transparent backdrop-blur-md shadow-sm" : ""
-      }`}
+      className={`z-50 fixed top-0 left-0 w-full mt-1 px-2 lg:px-0 mx-auto`}
     >
-      <div className="block-container flex flex-row justify-between py-4 items-center">
+      <div className={`block-container-px flex flex-row justify-between py-1 lg:py-2 items-center rounded-full z-50 transition-all duration-300 ${
+        isScrolled ? "bg-transparent backdrop-blur-md shadow-sm" : ""
+      }`}>
         {/* LOGO */}
         <div className="text-xl font-semibold flex flex-row items-center gap-2">
           <img src={logo} alt="Planix logo" className="h-[20px]" />
@@ -47,7 +47,7 @@ export default function Header() {
         <div className="hidden lg:flex gap-12 items-center">
           <nav className="flex flex-row gap-4">
             {linkData.map((link, index) => (
-              <a href={link.href} className="link" key={index}>
+              <a href={link.href} className="link link-underline" key={index}>
                 {link.title}
               </a>
             ))}

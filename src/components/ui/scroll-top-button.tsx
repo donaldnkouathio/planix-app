@@ -27,8 +27,8 @@ export default function ScrollToTopButton() {
   return (
     <div
       onClick={scrollToTop}
-      className={` flex justify-center items-center  h-10 w-10
-        fixed bottom-14 lg:bottom-6 right-6 z-50 
+      className={` flex justify-center items-center h-10 w-10
+        fixed bottom-6 right-6 z-50 
         bg-primary dark:bg-white 
         rounded-lg shadow-lg transition-all duration-300 
         hover:scale-110 cursor-pointer

@@ -1,6 +1,6 @@
 {
   "appName": "Planix",
-  "lastUpdated": "26 Octobre 2025",
+  "lastUpdated": "17 Novembre 2025",
   "sections": [
     {
       "title": "1. Informations que nous collectons",
@@ -11,21 +11,25 @@
         },
         {
           "title": "1.2 Données locales",
-          "content": "L’application stocke localement vos événements, préférences d’affichage, historiques de sauvegarde et statistiques. Ces données ne quittent jamais votre appareil."
+          "content": "L’application stocke localement vos événements, préférences d’affichage, historiques de sauvegarde, statistiques et notifications planifiées. Ces données ne quittent jamais votre appareil."
         },
         {
           "title": "1.3 Données de sauvegarde",
           "content": "Si vous choisissez la sauvegarde sur Google Drive, Planix crée un dossier privé dans votre espace Drive et y enregistre vos sauvegardes chiffrées. L’application n’a accès qu’à ces fichiers et vous pouvez les supprimer à tout moment."
+        },
+        {
+          "title": "1.4 Données de notifications",
+          "content": "Pour permettre les notifications push, Planix enregistre localement votre token FCM (Firebase Cloud Messaging) et certaines informations d’événements (titre, message, date, identifiant de l’événement). Ces données sont utilisées uniquement pour vous notifier et ne sont partagées avec personne d’autre. Les notifications planifiées peuvent être synchronisées avec notre backend cloud afin d’assurer leur livraison même lorsque vous êtes offline. Aucune donnée n’est utilisée à des fins publicitaires."
         }
       ]
     },
     {
       "title": "2. Comment nous utilisons vos informations",
-      "content": "Les données sont utilisées uniquement pour enregistrer, restaurer et synchroniser vos événements, gérer vos préférences et effectuer les sauvegardes Drive. Aucune donnée n’est partagée à des fins publicitaires ou analytiques."
+      "content": "Les données sont utilisées uniquement pour enregistrer, restaurer et synchroniser vos événements, gérer vos préférences, effectuer les sauvegardes Drive, et pour planifier/afficher vos notifications. Aucune donnée n’est partagée à des fins publicitaires ou analytiques."
     },
     {
       "title": "3. Stockage et sécurité des données",
-      "content": "Les données locales sont stockées en sécurité sur votre appareil. Les sauvegardes Google Drive sont protégées par OAuth 2.0. Planix ne transmet aucune donnée à ses propres serveurs."
+      "content": "Les données locales sont stockées en sécurité sur votre appareil. Les sauvegardes Google Drive et les notifications cloud sont protégées par OAuth 2.0 et les règles de sécurité Firebase. Planix ne transmet aucune donnée à des serveurs tiers non sécurisés."
     },
     {
       "title": "4. Authentification Google",
@@ -45,7 +49,7 @@
     },
     {
       "title": "8. Vos droits",
-      "content": "Vous pouvez supprimer vos données locales, supprimer vos fichiers Planix dans Google Drive et révoquer les autorisations de Planix dans votre compte Google à tout moment.",
+      "content": "Vous pouvez supprimer vos données locales, supprimer vos fichiers Planix dans Google Drive et révoquer les autorisations de Planix dans votre compte Google à tout moment. Vous pouvez également désactiver les notifications ou supprimer vos notifications planifiées stockées sur le cloud.",
       "links": [
         {
           "label": "Gérer les autorisations Google",
@@ -68,7 +72,7 @@
   ],
   "summary": {
     "events": {
-      "storage": "Sur votre appareil",
+      "storage": "Sur votre appareil et synchronisées via notre backend cloud pour notifications",
       "shared": false
     },
     "googleDrive": {
@@ -81,6 +85,10 @@
     },
     "googleAccount": {
       "usage": "Connexion et sauvegarde",
+      "shared": false
+    },
+    "notifications": {
+      "storage": "Localement sur l’appareil et sur le backend cloud pour livraison",
       "shared": false
     }
   }
